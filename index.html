@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nave do Tião</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1> NAVE DO TIÃO</h1>
+        <p>Painel de Operações da Nave</p>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main>
+
+        <!-- PLANETAS -->
+        <section class="secao">
+            <h2>🪐 Planetas para Exploração</h2>
+
+            <div class="planetas">
+
+                <!-- PLANETA DESBLOQUEADO -->
+                <div class="card-planeta">
+                    <div class="imagem-planeta">
+                        <!-- COLOQUE A FOTO AQUI -->
+                        <img src="planeta verdejante.png" alt="Planeta">
+                    </div>
+
+                    <h3>Planeta Verdejante</h3>
+                    <p>Planeta Desbloqueado</p>
+                </div>
+
+                <!-- PLANETA BLOQUEADO -->
+                <div class="card-planeta bloqueado">
+                    <div class="interrogacao">?</div>
+
+                    <h3>Planeta Desconhecido</h3>
+                    <p>Este planeta não foi desbloqueado.</p>
+                </div>
+
+                <!-- PLANETA BLOQUEADO -->
+                <div class="card-planeta bloqueado">
+                    <div class="interrogacao">?</div>
+
+                    <h3>Planeta Desconhecido</h3>
+                    <p>Este planeta não foi desbloqueado.</p>
+                </div>
+
+                <!-- PLANETA BLOQUEADO -->
+                <div class="card-planeta bloqueado">
+                    <div class="interrogacao">?</div>
+
+                    <h3>Planeta Desconhecido</h3>
+                    <p>Este planeta não foi desbloqueado.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MISSÕES (ESTÁ ANTES DE ESQUADRÕES) -->
+        <section class="secao">
+
+            <h2>📋 Painel de Missões</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Missão</th>
+                        <th>Status missão</th>
+                        <th>Quem completou</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr><td>Missão tutorial</td><td>Finalizada</td><td>Todos</td></tr>
+                    <tr><td>Missão combatente</td><td>Finalizada</td><td>Grupo 1, grupo 2, grupo 3</td></tr>
+                    <tr><td>Missão planeta verdejante</td><td>Ativa</td><td>grupo 1, Grupo 2 e grupo 3</td></tr>
+                    <tr><td>Missão classe combatente</td><td>Ativa</td><td>Grupo 1</td></tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- ESQUADRÕES -->
+        <section class="secao">
+
+            <h2> Esquadrões</h2>
+
+            <div class="grupos">
+
+                <div class="card-grupo">
+                    <h3>Grupo 01</h3>
+
+                    <p>Integrantes:</p>
+
+                    <ul>
+                        <li>Gustavo Silveira</li>
+                        <li>Lucas Felipe</li>
+                        <li>Thiago Castro</li>
+                    </ul>
+                </div>
+
+                <div class="card-grupo">
+                    <h3>Grupo 02</h3>
+
+                    <p>Integrantes:</p>
+
+                    <ul>
+                        <li>Vinicius Jalovicar</li>
+                        <li>Gabriel Pontes</li>
+                        <li>Igor Lemmy</li>
+                        <li>Sarah Silva</li>
+                    </ul>
+                </div>
+
+                <div class="card-grupo">
+                    <h3>Grupo 03</h3>
+
+                    <p>Integrantes:</p>
+
+                    <ul>
+                        <li>Henrique</li>
+                        <li>Erica Melo</li>
+                        <li>Pedro Francisco</li>
+                        <li>Matheus</li>
+                    </ul>
+                </div>
+
+                 <div class="card-grupo">
+                    <h3>Grupo 04</h3>
+
+                    <p>Integrantes:</p>
+
+                    <ul>
+                        <li>Nome</li>
+                        <li>Nome</li>
+                        <li>Nome</li>
+                    </ul>
+                </div>
+
+
+                <div class="card-grupo">
+                    <h3>Povo livre</h3>
+
+                
+
+                    <ul>
+                        <li>Isabelli</li>
+                        <li>Julia Torres</li>
+                        <li>Marina Barbieri</li>
+                        <li>Eduarda Zanetti</li>
+                        <li>Sophia Lopes</li>
+                        <li>Gustavo José</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CHAT -->
+        <section class="secao">
+
+            <h2>💬 Central de Comunicação</h2>
+
+            <div class="chat">
+
+                <div class="mensagens" id="mensagens">
+          
+                </div>
+
+                <div class="enviar">
+
+                    <input
+                        type="text"
+                        id="mensagem"
+                        placeholder="Digite sua mensagem..."
+                    >
+                    <button onclick="enviarMensagem()">Enviar</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

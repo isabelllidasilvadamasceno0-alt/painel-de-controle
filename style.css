@@ -1,0 +1,336 @@
+/* =======================
+   CONFIGURAÇÕES GERAIS
+======================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Times New Roman", Times, serif;
+}
+
+body{
+    background:#050816;
+    color:#fff;
+}
+
+/* =======================
+   CABEÇALHO
+======================= */
+
+header{
+    text-align:center;
+    padding:35px 20px;
+    background:#08111f;
+    border-bottom:3px solid #276bd1;
+    box-shadow:0 0 20px #276bd1;
+}
+
+header h1{
+    color:#276bd1;
+    font-size:48px;
+    text-shadow:0 0 15px #276bd1;
+}
+
+header p{
+    margin-top:10px;
+    color:#d9f7ff;
+    font-size:18px;
+}
+
+/* =======================
+   CONTEÚDO
+======================= */
+
+main{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.secao{
+    margin-bottom:60px;
+}
+
+.secao h2{
+    color:#276bd1;
+    margin-bottom:25px;
+    font-size:30px;
+    text-align:center;
+}
+
+/* =======================
+   PLANETAS
+======================= */
+
+.planetas{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card-planeta{
+    width:250px;
+    background:#101b2f;
+    border:2px solid #276bd1;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 0 15px rgba(39,107,209,.2);
+}
+
+.card-planeta:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px #276bd1;
+}
+
+.imagem-planeta{
+    width:180px;
+    height:180px;
+    margin:auto;
+    margin-bottom:15px;
+    border-radius:12px;
+    overflow:hidden;
+    border:2px solid #276bd1;
+}
+
+.imagem-planeta img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.interrogacao{
+    width:180px;
+    height:180px;
+    margin:auto;
+    margin-bottom:15px;
+    border-radius:12px;
+    border:2px dashed #276bd1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:90px;
+    color:#276bd1;
+}
+
+.bloqueado{
+    opacity:.7;
+}
+
+/* =======================
+   MISSÕES
+======================= */
+
+.ataques{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.ataques h2{
+    text-align: center;
+    color: #276bd1;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #1f1f1f;
+    box-shadow: 0 0 15px rgba(46, 103, 209, 0.3);
+}
+
+th{
+    background: linear-gradient(90deg, #276bd1,#276bd1);
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+td{
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #276bd1;
+}
+
+/* Linhas */
+tbody tr:nth-child(odd){
+    background: #000;
+}
+
+tbody tr:nth-child(odd) td{
+    color: #fff;
+}
+
+/* Linhas */
+tbody tr:nth-child(even){
+    background: #000;
+}
+
+tbody tr:nth-child(even) td{
+    color: #fff;
+}
+
+/* Efeito ao passar o mouse */
+tbody tr:hover{
+    background: #134e85;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+tbody tr:hover td{
+    color: #2e80cc;
+}
+
+/* =======================
+   GRUPOS
+======================= */
+
+.grupos{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card-grupo{
+    width:250px;
+    background:#101b2f;
+    border:2px solid #276bd1;
+    border-radius:15px;
+    padding:20px;
+    transition:.3s;
+}
+
+.card-grupo:hover{
+    transform:scale(1.04);
+    box-shadow:0 0 20px #276bd1;
+}
+
+.card-grupo h3{
+    text-align:center;
+    color:#276bd1;
+    margin-bottom:15px;
+}
+
+.card-grupo p{
+    margin-bottom:10px;
+}
+
+.card-grupo ul{
+    list-style:none;
+}
+
+.card-grupo li{
+    padding:8px;
+    margin-bottom:8px;
+    background:#1b2b49;
+    border-radius:6px;
+}
+
+/* =======================
+   CHAT
+======================= */
+
+.chat{
+    background:#101b2f;
+    border:2px solid #276bd1;
+    border-radius:15px;
+    padding:20px;
+}
+
+.mensagens{
+    height:320px;
+    overflow-y:auto;
+    padding:15px;
+    background:#08111f;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.mensagem{
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+    width:75%;
+    line-height:1.5;
+}
+
+.tiao{
+    background:#276bd1;
+    color:#000;
+}
+
+.grupo{
+    background:#203c63;
+    margin-left:auto;
+}
+
+.enviar{
+    display:flex;
+    gap:15px;
+}
+
+.enviar input{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#08111f;
+    color:#fff;
+    outline:none;
+    border:2px solid #276bd1;
+}
+
+.enviar button{
+    width:150px;
+    border:none;
+    border-radius:10px;
+    background:#276bd1;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.enviar button:hover{
+    background:#7ce9ff;
+    box-shadow:0 0 15px #276bd1;
+}
+
+/* =======================
+   RESPONSIVO
+======================= */
+
+@media(max-width:900px){
+
+    header h1{
+        font-size:34px;
+    }
+
+    .card-planeta,
+    .card-grupo,
+    .card-missao{
+        width:100%;
+    }
+
+    .mensagem{
+        width:100%;
+    }
+
+    .enviar{
+        flex-direction:column;
+    }
+
+    .enviar button{
+        width:100%;
+    }
+
+}
