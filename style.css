@@ -334,3 +334,17 @@ tbody tr:hover td{
     }
 
 }
+
+
+/* LINKS PARA AS PÁGINAS DOS PILOTOS */
+.link-piloto{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    width:100%;
+}
+
+.link-piloto:hover{
+    color:#7fb4ff;
+    text-decoration:underline;
+}
