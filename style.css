@@ -345,6 +345,47 @@ tbody tr:hover td{
 }
 
 .link-piloto:hover{
-    color:#7fb4ff;
+    color:#fff;
     text-decoration:underline;
+}
+
+/* LINKS DOS PILOTOS */
+.link-piloto {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 4px 0;
+
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border: 1px solid transparent;
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+/* Quando passa o mouse */
+.link-piloto:hover {
+    color: #ffffff;
+
+    border-color: #ffffff;
+    background-color: rgba(0, 234, 255, 0.12);
+
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 12px rgba(0, 234, 255, 0.6);
+
+    transform: translateX(5px);
+}
+
+/* Quando clica */
+.link-piloto:active {
+    transform: translateX(5px) scale(0.96);
+}
+
+/* Link já visitado */
+.link-piloto:visited {
+    color: #fff;
 }
